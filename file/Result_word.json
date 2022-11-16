@@ -1,0 +1,722 @@
+[
+    {
+        "Unnamed: 0":0,
+        "seg":"好吃",
+        "count":2764,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":1,
+        "seg":"吃",
+        "count":1005,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":2,
+        "seg":"服務",
+        "count":786,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":3,
+        "seg":"不錯",
+        "count":727,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":4,
+        "seg":"新鮮",
+        "count":537,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":5,
+        "seg":"價格",
+        "count":495,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":6,
+        "seg":"餐點",
+        "count":492,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":7,
+        "seg":"非常",
+        "count":457,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":8,
+        "seg":"味道",
+        "count":436,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":9,
+        "seg":"便宜",
+        "count":410,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":10,
+        "seg":"環境",
+        "count":407,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":11,
+        "seg":"口味",
+        "count":399,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":12,
+        "seg":"用餐",
+        "count":369,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":13,
+        "seg":"湯頭",
+        "count":367,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":14,
+        "seg":"親切",
+        "count":363,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":15,
+        "seg":"基隆",
+        "count":348,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":16,
+        "seg":"老闆",
+        "count":337,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":17,
+        "seg":"真的",
+        "count":336,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":18,
+        "seg":"美味",
+        "count":332,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":19,
+        "seg":"態度",
+        "count":317,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":20,
+        "seg":"海鮮",
+        "count":314,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":21,
+        "seg":"東西",
+        "count":283,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":22,
+        "seg":"份量",
+        "count":282,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":23,
+        "seg":"餐廳",
+        "count":278,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":24,
+        "seg":"cp值",
+        "count":277,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":25,
+        "seg":"推薦",
+        "count":272,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":26,
+        "seg":"食材",
+        "count":266,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":27,
+        "seg":"高",
+        "count":254,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":28,
+        "seg":"沒",
+        "count":242,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":29,
+        "seg":"覺得",
+        "count":240,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":30,
+        "seg":"有點",
+        "count":238,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":31,
+        "seg":"不會",
+        "count":235,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":32,
+        "seg":"麵",
+        "count":230,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":33,
+        "seg":"牛肉",
+        "count":229,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":34,
+        "seg":"牛肉麵",
+        "count":217,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":35,
+        "seg":"料理",
+        "count":215,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":36,
+        "seg":"值得",
+        "count":213,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":37,
+        "seg":"乾淨",
+        "count":205,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":38,
+        "seg":"不錯吃",
+        "count":202,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":39,
+        "seg":"超",
+        "count":202,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":40,
+        "seg":"食物",
+        "count":200,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":41,
+        "seg":"感覺",
+        "count":199,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":42,
+        "seg":"店家",
+        "count":199,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":43,
+        "seg":"喜歡",
+        "count":199,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":44,
+        "seg":"比較",
+        "count":196,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":45,
+        "seg":"價位",
+        "count":186,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":46,
+        "seg":"實在",
+        "count":185,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":47,
+        "seg":"炒飯",
+        "count":183,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":48,
+        "seg":"肉",
+        "count":182,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":49,
+        "seg":"平價",
+        "count":181,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":50,
+        "seg":"人員",
+        "count":177,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":51,
+        "seg":"普通",
+        "count":172,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":52,
+        "seg":"菜色",
+        "count":171,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":53,
+        "seg":"很多",
+        "count":170,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":54,
+        "seg":"麵包",
+        "count":168,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":55,
+        "seg":"特別",
+        "count":163,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":56,
+        "seg":"適合",
+        "count":161,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":57,
+        "seg":"店員",
+        "count":160,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":58,
+        "seg":"很棒",
+        "count":157,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":59,
+        "seg":"讚",
+        "count":156,
+        "City":"基隆"
+    },
+    {
+        "Unnamed: 0":61,
+        "seg":"好吃",
+        "count":4882,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":62,
+        "seg":"吃",
+        "count":1942,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":63,
+        "seg":"服務",
+        "count":1662,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":64,
+        "seg":"餐點",
+        "count":1397,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":65,
+        "seg":"不錯",
+        "count":1287,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":66,
+        "seg":"環境",
+        "count":1055,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":67,
+        "seg":"非常",
+        "count":996,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":68,
+        "seg":"親切",
+        "count":933,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":69,
+        "seg":"口味",
+        "count":903,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":70,
+        "seg":"味道",
+        "count":865,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":71,
+        "seg":"價格",
+        "count":860,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":72,
+        "seg":"老闆",
+        "count":768,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":73,
+        "seg":"真的",
+        "count":746,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":74,
+        "seg":"用餐",
+        "count":737,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":75,
+        "seg":"態度",
+        "count":711,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":76,
+        "seg":"湯頭",
+        "count":658,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":77,
+        "seg":"份量",
+        "count":634,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":78,
+        "seg":"拉麵",
+        "count":621,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":79,
+        "seg":"東西",
+        "count":593,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":80,
+        "seg":"推薦",
+        "count":586,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":81,
+        "seg":"美味",
+        "count":577,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":82,
+        "seg":"新鮮",
+        "count":575,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":83,
+        "seg":"不會",
+        "count":554,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":84,
+        "seg":"高",
+        "count":534,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":85,
+        "seg":"喜歡",
+        "count":524,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":86,
+        "seg":"麵",
+        "count":515,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":87,
+        "seg":"有點",
+        "count":503,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":88,
+        "seg":"cp值",
+        "count":501,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":89,
+        "seg":"便宜",
+        "count":488,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":90,
+        "seg":"覺得",
+        "count":480,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":91,
+        "seg":"平價",
+        "count":467,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":92,
+        "seg":"飲料",
+        "count":439,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":93,
+        "seg":"乾淨",
+        "count":437,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":94,
+        "seg":"食材",
+        "count":433,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":95,
+        "seg":"適合",
+        "count":424,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":96,
+        "seg":"沒",
+        "count":408,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":97,
+        "seg":"很多",
+        "count":406,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":98,
+        "seg":"店員",
+        "count":404,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":99,
+        "seg":"料理",
+        "count":403,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":100,
+        "seg":"超",
+        "count":395,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":101,
+        "seg":"食物",
+        "count":394,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":102,
+        "seg":"好喝",
+        "count":385,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":103,
+        "seg":"舒適",
+        "count":381,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":104,
+        "seg":"人員",
+        "count":374,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":105,
+        "seg":"讚",
+        "count":370,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":106,
+        "seg":"感覺",
+        "count":368,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":107,
+        "seg":"比較",
+        "count":368,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":108,
+        "seg":"炒飯",
+        "count":368,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":109,
+        "seg":"用心",
+        "count":349,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":110,
+        "seg":"值得",
+        "count":345,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":111,
+        "seg":"地方",
+        "count":345,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":112,
+        "seg":"店",
+        "count":342,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":113,
+        "seg":"店家",
+        "count":341,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":114,
+        "seg":"選擇",
+        "count":338,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":115,
+        "seg":"特別",
+        "count":336,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":116,
+        "seg":"店內",
+        "count":333,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":117,
+        "seg":"想",
+        "count":333,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":118,
+        "seg":"很棒",
+        "count":331,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":119,
+        "seg":"餐廳",
+        "count":325,
+        "City":"台中"
+    },
+    {
+        "Unnamed: 0":120,
+        "seg":"朋友",
+        "count":318,
+        "City":"台中"
+    }
+]

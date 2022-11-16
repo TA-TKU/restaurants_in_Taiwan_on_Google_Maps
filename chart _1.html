@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Google Review Analysis</title>
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+    <!-- 
+    Visual Admin Template
+    https://templatemo.com/tm-455-visual-admin
+    -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-style.css" rel="stylesheet">
+    <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>  
+    <!-- Left column -->
+    <div class="templatemo-flex-row">
+      <div class="templatemo-sidebar">
+        <header class="templatemo-site-header">
+          <div ></div>
+          <h1 style="color:#85321ef5"><i class="fa fa-comments fa-fw" style='color:#ebb8ac'></i>Google <br>
+            review <br>analysis</h1>
+        </header>
+        <div class="profile-photo-container">
+          <img src="images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
+          <div class="profile-photo-overlay"></div>
+        </div>      
+        <!-- Search box -->
+        <!-- <form class="templatemo-search-form" role="search">
+          <div class="input-group">
+              <button type="submit" class="fa fa-search"></button>
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
+          </div>
+        </form> -->
+        <div class="mobile-menu-icon">
+            <i class="fa fa-bars"></i>
+          </div>
+        <nav class="templatemo-left-nav">          
+          <ul>
+            <!-- <li><a href="index.html"><i class="fa fa-home fa-fw"></i>Dashboard</a></li> -->
+            <!-- <li><a href="#"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li> -->
+            <li><a href="data-visualization.html" class="active"><i class="fa fa-book"></i>Story of reviews</a>
+              <li><a href="wordCloud.html" class="active_1"><i class="fa fa-chevron-right"></i>Word Cloud</a></li>
+              <li><a href="word2Vec.html" class="active_1"><i class="fa fa-chevron-right"></i>Word2Vec</a></li>
+              <li><a href="#" class="active"><i class="fa fa-chevron-right"></i>charts</a></li>
+              
+            </li>
+            <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li>
+            <!-- <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li> -->
+            <!-- <li><a href="Word2Vec.html"><i class="fa fa-sliders fa-fw"></i>Word2Vec</a></li>
+            <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Review's quality per year</a></li> -->
+          </ul>  
+        </nav>
+      </div>
+      <!-- Main content --> 
+      <div class="templatemo-content col-1 light-gray-bg">
+        <div class="templatemo-top-nav-container">
+          <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+              <ul class="text-uppercase">
+                <li><a href="index.html" class="active"><i class="fa fa-home fa-fw"></i>homepage</a></li>
+                <!-- <li><a href="" class="active">Admin panel</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Overview</a></li>
+                <li><a href="login.html">Sign in form</a></li> -->
+              </ul>  
+            </nav> 
+          </div>
+        </div>
+        <div class="templatemo-content-container">         
+          <div class="templatemo-content-widget white-bg">
+            <!-- <h2 class="margin-bottom-10">Data Visualization</h2>
+            <p>Credit goes to <a href="https://google-developers.appspot.com/chart/" target="_parent">Google Charts</a></p> -->
+            <div class="text-xs-center">
+              <ul class="pagination justify-content-center pagination-lg" style="margin:20px 0">
+                <!-- <li class="page-item"><a class="page-link" href="#">前一頁</a></li> -->
+                <li class="page-item "><a class="page-link" href="chart.html">Author analysis</a></li>
+                <li class="page-item active" ><a class="page-link" href="#">Restaurant analysis</a></li>
+                
+                <!-- <li class="dropdown" ><a class="page-link" href="#">Restaurant analysis</a></li> -->
+                <!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+                <!-- <li class="page-item"><a class="page-link" href="#">後一頁</a></li> class="dropdown active">-->
+              </ul>
+            </div>
+            <div class="panel panel-default no-border">
+              <div class="panel-heading border-radius-10">
+                <h1>Number of Reviews Per Year</h1>
+                
+              </div>
+              <div class="panel-body">
+                <div class="templatemo-flex-row flex-content-row margin-bottom-30">
+                  <div class="container" id="chart" >
+                    <div class="row" id="combo"> 
+                      <div class="container ds all"  >
+                        <iframe  src="https://public.tableau.com/views/AllRestaurant/1?:language=zh-Hant&:display_count=y&publish=yes&:origin=viz_share_link:showVizHome=no&:embed=true"  frameborder="0" allowfullscreen="true" alt="all" ></iframe>
+                          
+                      </div> 
+                      <div class="container ds chinese" >
+                        <iframe  src="https://public.tableau.com/views/res_chinese/Chinese?:language=zh-Hant&:display_count=y&publish=yes&:origin=viz_share_link:showVizHome=no&:embed=true"  frameborder="0" allowfullscreen="true" alt="chinese"></iframe>
+                      </div>
+                      <div class="container ds japanese" >
+                        <iframe  src="https://public.tableau.com/views/res_japanese/Japanese?:language=zh-Hant&:display_count=y&publish=yes&:origin=viz_share_link:showVizHome=no&:embed=true"  frameborder="0" allowfullscreen="true" alt="japanese"></iframe>
+                      </div>
+                      <div class="container ds western" >
+                        <iframe  src="https://public.tableau.com/views/res_western/Western?:language=zh-Hant&:display_count=y&publish=yes&:origin=viz_share_link:showVizHome=no&:embed=true"  frameborder="0" allowfullscreen="true" alt="western"></iframe>
+                      </div>
+                      <div class="container ds breakfast" >
+                        <iframe  src="https://public.tableau.com/views/res_breakfast/Breakfast?:language=zh-Hant&:display_count=y&publish=yes&:origin=viz_share_link:showVizHome=no&:embed=true"  frameborder="0" allowfullscreen="true" alt="breakfast"></iframe>
+                      </div>
+                      <div class="container ds vegetarian" >
+                        <iframe  src="https://public.tableau.com/views/res_veg/Vege?:language=zh-Hant&:display_count=y&publish=yes&:origin=viz_share_link:showVizHome=no&:embed=true"  frameborder="0" allowfullscreen="true" alt="vegetarian"></iframe>
+                      </div>
+                      <div class="container ds others" >
+                        <iframe  src="https://public.tableau.com/views/res_other/other?:language=zh-Hant&:display_count=y&publish=yes&:origin=viz_share_link:showVizHome=no&:embed=true"  frameborder="0" allowfullscreen="true" alt="others"></iframe>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <!-- burger king https://public.tableau.com/views/res_BURGERKING/All_specific?:language=zh-Hant&:display_count=y&publish=yes&:origin=viz_share_link -->
+
+                  <!-- <div class="container"> -->
+                    <div class="col-xs-auto col-sm-auto col-sm-offset-0 col-md-auto col-md-offset-0 col-lg-1" >
+                      <div class="select-btn" id = "btn1">
+                      <!-- <a href="#" data-rel="all">最愛留言者</a> -->
+                      <a href="#" data-rel="all" class="col order-7">全部</a>
+                      <a href="#" data-rel="chinese" class="col order-6">中式</a>
+                      <a href="#" data-rel="japanese" class="col order-5">日式</a>
+                      <a href="#" data-rel="western" class="col order-4">西式</a>
+                      
+                      <a href="#" data-rel="breakfast" class="col order-3">早餐</a>
+                      
+                      <a href="#" data-rel="vegetarian" class="col order-2">素食</a>
+                      <a href="#" data-rel="others" class="col order-1">其他</a>
+                      
+                      </div>
+                    </div>
+                  <!-- </div> -->
+                 
+
+                  <!-- <div class="col-1" style = "height:600px;"> -->
+                    
+
+                    <!-- <div id="gauge_div" class="templatemo-chart">
+                      <div id='title'>Title:</div>
+                    </div> -->
+                    <!-- <h3 class="text-center margin-bottom-5">Computer Resources</h3> -->
+                    <!-- <p class="text-center">Curabitur</p>               -->
+                  </div>
+                  
+                  
+                </div> 
+                    
+              </div>
+              <div class="panel panel-default no-border">
+                <div class="panel-heading border-radius-10">
+                  <h1>Number of Reviews Per Year</h1>
+                  <h2>Specific Restaurant</h2>
+                </div>
+                <div class="panel-body">
+                  
+                  <table width="460" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                    <td><iframe class="container" src="https://public.tableau.com/views/res_specific/All_specific?:language=zh-Hant&:display_count=y&publish=yes&:origin=viz_share_link:showVizHome=no&:embed=true"  frameborder="0" width="800" height="600" allowfullscreen="true"></iframe>
+                    </td>
+                    </tr>
+                  </table>
+                      <!-- <div id="tableauViz" class="container"></div> -->
+                                         
+                  
+                </div> 
+              </div>
+            </div>
+            
+
+            <!-- <div class="text-xs-center">
+              <ul class="pagination justify-content-center pagination-lg" style="margin:20px 0">
+                <li class="page-item"><a class="page-link" href="chart.html">前一頁</a></li>
+                <li class="page-item"><a class="page-link" href="chart.html">1</a></li>
+                <li class="page-item active"><a class="page-link" href="">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">後一頁</a></li>
+              </ul>
+            </div> -->
+                        
+           
+          </div>
+          
+          <!-- <footer class="text-right">
+            <p>Copyright &copy; 2084 Company Name 
+            | Design: Template Mo</p>
+          </footer>          -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script> <!--  jQuery Migrate Plugin -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script> <!-- Google Chart -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+    <script>
+
+        $(function() {
+                $('.container.ds.all').addClass('scale');
+                $('#combo iframe').addClass('responsive-iframe');
+                var selectedClass = "";
+                $(".select-btn>a").click(function(){
+                selectedClass = $(this).attr("data-rel");
+                $("#combo").fadeTo(100, 0.1);
+                $("#combo div").not("."+selectedClass).fadeOut().removeClass('scale');
+                setTimeout(function() {
+                $("."+selectedClass).fadeIn().addClass('scale');
+                $("#combo").fadeTo(500, 1);
+              }, 300);
+              return false;
+              });
+         });
+
+      
+    </script>
+    <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+  </body>
+</html>

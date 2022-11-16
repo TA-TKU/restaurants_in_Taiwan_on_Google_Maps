@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Google Review Analysis</title>
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+    <!-- 
+    Visual Admin Template
+    https://templatemo.com/tm-455-visual-admin
+    -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-style.css" rel="stylesheet">
+    <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>  
+    <!-- Left column -->
+    <div class="templatemo-flex-row">
+      <div class="templatemo-sidebar">
+        <header class="templatemo-site-header">
+          <div ></div>
+          <h1 style="color:#85321ef5"><i class="fa fa-comments fa-fw" style='color:#ebb8ac'></i>Google <br>
+            review <br>analysis</h1>
+        </header>
+        <div class="profile-photo-container">
+          <img src="images/profile-photo1.jpg" alt="Profile Photo" class="img-responsive">  
+          <div class="profile-photo-overlay"></div>
+        </div>      
+        <!-- Search box -->
+        <!-- <form class="templatemo-search-form" role="search">
+          <div class="input-group">
+              <button type="submit" class="fa fa-search"></button>
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
+          </div>
+        </form> -->
+        <div class="mobile-menu-icon">
+            <i class="fa fa-bars"></i>
+          </div>
+        <nav class="templatemo-left-nav">          
+          <ul>
+            <!-- <li><a href="index.html"><i class="fa fa-home fa-fw"></i>Dashboard</a></li> -->
+            <!-- <li><a href="#"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li> -->
+            <li><a href="data-visualization.html" class="active"><i class="fa fa-book"></i>Story of reviews</a>
+              <li><a href="#" class="active"><i class="fa fa-chevron-right"></i>Word Cloud</a></li>
+              <li><a href="word2Vec.html" class="active_1"><i class="fa fa-chevron-right"></i>Word2Vec</a></li>
+              <li><a href="chart.html" class="active_1"><i class="fa fa-chevron-right"></i>charts</a></li>
+              
+            </li>
+            <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li>
+            <!-- <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li> -->
+            <!-- <li><a href="Word2Vec.html"><i class="fa fa-sliders fa-fw"></i>Word2Vec</a></li>
+            <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Review's quality per year</a></li> -->
+          </ul>  
+        </nav>
+      </div>
+      <!-- Main content --> 
+      <div class="templatemo-content col-1 light-gray-bg">
+        <div class="templatemo-top-nav-container">
+          <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+              <ul class="text-uppercase">
+                <li><a href="index.html" class="active"><i class="fa fa-home fa-fw"></i>homepage</a></li>
+                
+                <!-- <li><a href="" class="active">Admin panel</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Overview</a></li>
+                <li><a href="login.html">Sign in form</a></li> -->
+              </ul>  
+            </nav> 
+          </div>
+        </div>
+        <div class="templatemo-content-container">         
+          <div class="templatemo-content-widget white-bg">
+            <!-- <h2 class="margin-bottom-10">Data Visualization</h2>
+            <p>Credit goes to <a href="https://google-developers.appspot.com/chart/" target="_parent">Google Charts</a></p> -->
+            <div class="text-xs-center">
+              <ul class="pagination justify-content-center pagination-lg" style="margin:20px 0">
+                <!-- <li class="page-item"><a class="page-link" href="#">前一頁</a></li> -->
+                <li class="page-item "><a class="page-link" href="wordCloud.html">Sort By City</a></li>
+                <li class="page-item active"><a class="page-link" href="wordCloud_1.html">Sort By Restaurant Genere</a></li>
+                <li class="page-item"><a class="page-link" href="wordCloud_2.html">Sort By Stars</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="wordCloud_1.html">後一頁</a></li> -->
+              </ul>
+            </div>
+            
+            <div class="panel panel-default no-border">
+              <div class="panel-heading border-radius-10">
+                <h1>WordCloud</h1>
+                <h2>Sort By Restaurant Genere</h2>
+                
+              </div>
+              <div class="panel-body">
+                <div class="templatemo-flex-row flex-content-row margin-bottom-30">
+                  <div class="col-1" id="main-content">
+                    <div id="gauge_div" class="container-md">
+                      <div id='title'></div>
+                    </div>
+                    
+                    <!-- <h3 class="text-center margin-bottom-5">Computer Resources</h3> -->
+                    <!-- <p class="text-center">Curabitur</p>               -->
+                  </div>
+                  <div class="col-md-2"> 
+                    <label style="font-size: 20px;" for="" class="t1">餐廳類別:</label>
+                    <select style="font-size: 20px;" class="st2" name="address" id="address">
+                        <!-- <option value="0"selected>請選擇類別</option> -->
+                        <option value=""selected>請選擇類別</option>
+                        <option value="0">中式</option>
+                        <option value="1">西式</option>
+                        <option value="2" >日式</option>
+                        <option value="3">素食</option>
+                        <option value="4">早餐</option>
+                        <!-- <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option> -->
+                    </select> 
+                  </div>
+                  
+                  
+                </div>
+                
+                
+                                 
+              </div>
+            </div> 
+            
+            
+          
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+    
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script> <!--  jQuery Migrate Plugin -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script> <!-- Google Chart -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+    <script>
+
+     
+    var words = [];
+    var width = $('#main-content').width();
+    var frame = 0;
+    var option_elem = document.getElementById("address");
+    var myWordCloud;  
+      
+      d3.json("file/All_type.json",function(error,data){
+          
+           
+          if(error){ 
+            console.log(error); 
+          }else{
+            words = data;
+          
+          }
+          
+
+      
+      // console.log(words);
+      //Simple animated example of d3-cloud - https://github.com/jasondavies/d3-cloud
+    //Based on https://github.com/jasondavies/d3-cloud/blob/master/examples/simple.html
+    // console.log(words);
+   
+    // Encapsulate the word cloud functionality
+    function wordCloud(selector) {
+
+      var fill = d3.scale.category10();
+
+      //Construct the word cloud's SVG element
+      var svg = d3.select(selector).append("svg")
+          .attr("width", width)
+          // .attr("width", 800)
+          .attr("height", 600)
+          // .attr("height", 300)
+          .append("g")
+          .attr("transform", "translate(" + width*0.5 +  "," + "300)")
+          // .attr("transform", "translate(400,300)");
+
+
+      //Draw the word cloud
+      function draw(result) {
+          var cloud = svg.selectAll("g text")
+                          .data(result, function(d) { return d.text; })
+                          // .style('width', '1000px')
+                          // .style('margin-left', '500px')
+                          // .style('margin-top', '20px')
+
+          // var sizeScale = d3.scale.linear()
+          //                         .domain([0, d3.max(result, function(d) { return d.size} )])
+          //                         .range([10, 50]); 
+
+          //Entering words
+          cloud.enter()
+              .append("text")
+              .style("font-family", "Impact")
+              .style("font-weight", "600")
+              .style("fill", function(d, i) { return fill(i); })
+              .attr("text-anchor", "middle")
+              .attr('font-size', 1)
+              .text(function(d) { return d.text; });
+
+          //Entering and existing words
+          cloud
+              .transition()
+                  .duration(600)
+                  .style("font-size", function(d) { return d.size + "px"; })
+                  .attr("transform", function(d) {
+                      return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                  })
+                  .style("fill-opacity", 1);
+
+          //Exiting words
+          cloud.exit()
+              .transition()
+                  .duration(200)
+                  .style('fill-opacity', 1e-6)
+                  .attr('font-size', 1)
+                  .remove();
+      }
+
+
+      //Use the module pattern to encapsulate the visualisation code. We'll
+      // expose only the parts that need to be public.
+      return {
+
+          //Recompute the word cloud for a new set of words. This method will
+          // asycnhronously call draw when the layout has been computed.
+          //The outside world will need to call this function, so make it part
+          // of the wordCloud return value.
+          update: function(result) {
+
+             
+            
+              document.getElementById('title').innerHTML = result[0].title;        
+              document.getElementById('title').style.fontSize = '30px';
+              document.getElementById('title').style.textAlign = 'center';
+              document.getElementById('gauge_div').style.textAlign = 'center';
+              // document.getElementById('title').style.background = 'yellow';
+              document.getElementById('title').style.color = '#448ECC';
+
+
+              d3.layout.cloud().size([width-10, 600])
+                  .words(result)
+                  .padding(5)
+                  .rotate(function() { return 0; })
+                  // .rotate(function() { return ~~(Math.random() * 2) * 90; })
+                  .font("Impact")
+                  .fontSize(function(d) { return d.size; })
+                  .on("end", draw)
+                  .start();
+
+                 
+            console.log(result)
+              
+          }
+          
+      }
+    }  
+   
+    
+    
+          
+      
+       
+           
+      
+
+      //Prepare one of the sample sentences by removing punctuation,
+      // creating an array of words and computing a random size attribute.
+    function getWords(i) {
+      city = words[i].city;
+      word_list = words[i].word_list;
+      var result = [];
+      for (j = 0; j < word_list.length; j++) {
+            result.push({text:word_list[j].seq, size:word_list[j].count, title: city});
+           }
+          
+      
+      var leaderScale = d3.scale.linear()
+        .range([30,150])
+        .domain([d3.min(result,function(d) { return d.size; }),
+                d3.max(result,function(d) { return d.size; })
+                  ]);
+
+      for (i = 0; i<result.length; i++){
+        result[i].size = leaderScale(result[i].size);
+          }
+      
+     return result;
+         
+          
+
+
+      
+          
+    }
+
+    var is_playing = false;
+    var timeoutVar;
+  
+    function playCloud() {
+      if (option_elem.value == words.length-1) {
+        clearTimeout(timeoutVar);
+      }
+      else {
+        myWordCloud.update(getWords(++frame % words.length));
+        bar_elem.value = frame % words.length;
+        timeoutVar = setTimeout(playCloud, 2000);
+        // var d = words[frame].date;
+        // month_elem.innerHTML = d.substring(0, 4) + '年' + d.substring(4) + '月';
+      }
+    }
+  
+    d3.select('#address')
+      .on('change', function() {
+        clearTimeout(timeoutVar);
+        is_playing = false;
+        
+        myWordCloud.update(getWords(option_elem.value));
+        frame = option_elem.value;
+  
+        // var d = words[frame].date;
+        // month_elem.innerHTML = d.substring(0, 4) + '年' + d.substring(4) + '月';
+  
+        // icon.addClass('play');
+        // icon.removeClass('pause');
+        console.log(option_elem.value)
+      });
+      
+      console.log(option_elem.value)
+
+      //This method tells the word cloud to redraw with a new set of words.
+      //In reality the new words would probably come from a server request,
+      // user input or some other source.
+      // function showNewWords(vis) {
+         
+      //   vis.update(getWords( ++ frame  % words.length));
+      //   setTimeout(function() { showNewWords(vis)}, 2000)
+         
+        
+      var myWordCloud = wordCloud(document.getElementById('gauge_div'));  
+         
+          
+      // }
+
+
+      //Create a new instance of the word cloud visualisation.
+      // var myWordCloud = wordCloud(document.getElementById('gauge_div'));
+
+      //Start cycling through the demo data
+      // showNewWords(myWordCloud);
+
+    }); 
+
+      
+
+    </script>
+    <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+  </body>
+</html>
